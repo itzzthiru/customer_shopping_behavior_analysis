@@ -1,161 +1,105 @@
-📊 Customer Shopping Behavior Analysis
-📌 Overview
+Customer Shopping Behavior Analysis
+📌 Project Overview
 
-This repository contains a complete data analytics project focused on analyzing customer shopping behavior. It demonstrates a full workflow from data loading and preprocessing in Python to SQL analysis in MySQL, interactive visualization in Power BI, and reporting. This project highlights analytical skills, SQL proficiency, and dashboard creation—all packaged with documentation and presentation materials.
+This project analyzes customer shopping behavior for a retail dataset to identify high-value segments, purchasing patterns, and actionable business insights. The goal is to support revenue growth, customer retention, and targeted marketing strategies using SQL, Python, and Power BI.
+
+🔍 Business Problem
+
+Retail businesses need to understand which customers drive revenue, how discounts and subscriptions affect spending, and which products are most profitable. By analyzing transaction data, this project answers key business questions:
+
+Which customer segments generate the highest revenue?
+
+Which products drive repeat purchases and high ratings?
+
+How do discounts and subscriptions impact purchase behavior?
+
+How should marketing and inventory decisions be optimized?
 
 🗂 Dataset
 
-The dataset includes 3,900 customer purchase records with 18 features capturing demographics, purchase details, product information, ratings, shipping, and subscription behavior.
-Key aspects:
+The dataset includes:
 
-Customer demographics (age, gender, location)
+Customer demographics (age group, gender)
 
-Purchase details (products, amounts, discounts)
+Transaction details (purchase amount, items purchased, category)
 
-Behavior flags (subscription status, repeat purchases)
+Discounts and subscription status
 
-Review ratings with some missing values handled in preprocessing
+Purchase frequency and repeat behavior
 
-🛠 Tools & Technologies
-Phase	Tools
-Data loading & cleaning	Python (VS Code)
-SQL analysis	MySQL Server, MySQL Workbench
-Query execution	VS Code
-Visualization	Power BI
-Reporting & Presentation	Markdown Report, Gamma PPT
-🧠 Steps / Workflow
-1. Data Loading
+Customer reviews
 
-Imported the dataset into Python using pandas.
+🛠 Tools Used
 
-Initial structure and descriptive statistics checked with df.info() and df.describe().
+SQL (MySQL) — Data querying and aggregation
 
-2. Data Cleaning & Preparation
+Python (Pandas, NumPy) — Data cleaning and preprocessing
 
-Standardized column names to snake_case.
+Power BI — Dashboard visualization
 
-Imputed missing values in the Review Rating column using median ratings by product category.
+VS Code / MySQL Workbench — Query execution and project management
 
-Created new features like age_group and calculated purchase_frequency_days.
+GitHub — Version control and project sharing
 
-Removed redundant or unnecessary columns after validation.
+📊 Analysis Steps
 
-3. Database Integration
+Load and clean dataset using Python
 
-Loaded the cleaned dataset into a MySQL Server database via MySQL Workbench.
+Write business-focused SQL queries to answer key questions
 
-Ensured correct schema and data types for analytical queries.
+Build visualizations in Power BI to highlight actionable insights
 
-4. SQL Analysis
+Summarize results and recommendations in reports and presentations
 
-Executed analytical SQL queries directly from VS Code connected to MySQL.
-
-Extracted key business metrics:
-
-Revenue by gender
-
-High-spending discount users
-
-Top products by rating
-
-Shipping type comparisons
-
-Customer segmentation
-
-And more
-
-5. Dashboard Creation
-
-Built an interactive Power BI dashboard to visualize insights.
-
-Included slicers and filters for dynamic analysis by category, gender, age group, etc.
-
-6. Reporting & Presentation
-
-Prepared a comprehensive written report summarizing findings.
-
-Created a presentation in Gamma to highlight key insights for stakeholders.
-
-📊 Dashboard Highlights
+💡 Key Business Questions & Insights
+Question	SQL Query	Insight	Business Recommendation
+Total revenue by gender	Q2	Male customers generate 60% of revenue	Target marketing to increase female segment revenue
+Discounts impact	Q3, Q7	Some high-value customers still use discounts	Apply targeted discounts to high-spending customers
+Product performance	Q4, Q9	Top 5 products have highest average ratings and sales	Prioritize top products for promotions and inventory
+Shipping & spend	Q5	Express shipping orders have higher average spend	Encourage Express shipping for premium customers
+Subscription impact	Q6, Q10	Subscribed customers spend more and repeat-buyers are likely to subscribe	Focus on subscription campaigns to boost revenue
+Customer segmentation	Q8	Segment distribution: New, Returning, Loyal	Customize marketing strategies for each segment
+Revenue by age group	Q11	Highest revenue from 25–34 age group	Allocate marketing budget for this age range
+📈 Dashboard
 
 The Power BI dashboard visualizes:
 
-Revenue breakdowns by demographic segments
+Revenue by customer segment, gender, and age group
 
-Top products and ratings
+Top-performing products and categories
 
-Customer behavior trends across subscription status
+Discount usage and subscription impact
 
-Shipping and discount impact on purchases
+Repeat purchase patterns
 
-📈 Results Summary
+Features:
 
-Key insights derived from the analysis include:
+Interactive filtering by product, age group, and category
 
-Majority of revenue generated from specific demographic segments
+KPI highlights for marketing and operations decisions
 
-Certain product categories outperform others in customer ratings
+Ready-to-use for business presentations
 
-Shipping type correlates with purchase behavior
+▶️ How to Run
 
-Repeat buyers show distinct revenue patterns
+Load customer_shopping_behavior.csv into MySQL or any SQL environment
 
-These findings can inform targeted marketing, pricing, and product strategies.
+Execute queries from sql_queries.sql to replicate analysis
 
-▶️ How to Run This Project
-Prerequisites
+Run Python notebook for data cleaning and preprocessing steps
 
-Python 3.x
+Open dashboard.pbix in Power BI to explore interactive insights
 
-MySQL Server
+⚡ Outcome & Value
 
-Power BI Desktop
+Identified high-value customer segments for targeted marketing
 
-VS Code (with SQL extension)
+Recommended products for promotion and inventory optimization
 
-Steps
+Determined the impact of discounts and subscriptions on revenue
 
-Clone the Repository
+Developed actionable insights for business decision-making
 
-git clone https://github.com/itzzthiru/customer_shopping_behavior_analysis
-cd customer_shopping_behavior_analysis
+🏷 Topics
 
-
-Python Environment
-
-Install required packages:
-
-pip install pandas numpy matplotlib seaborn mysql-connector-python
-
-
-Run the Python notebook:
-
-code Customer_Shopping_Behavior_Analysis.ipynb
-
-
-Database Setup
-
-Create a MySQL database.
-
-Use the provided schema and load the cleaned dataset.
-
-Connect via MySQL Workbench or VS Code.
-
-Execute SQL Queries
-
-Open SQL files in VS Code.
-
-Connect to MySQL and run queries to generate analytical outputs.
-
-Power BI Dashboard
-
-Open the .pbix file in Power BI Desktop.
-
-Interact with visuals and slicers to explore insights.
-
-Report & Presentation
-
-Read the provided markdown report.
-
-Review or present using the Gamma PPT file.
-
+data-analysis, SQL, Python, Power-BI, business-intelligence, customer-behavior, analytics-project
