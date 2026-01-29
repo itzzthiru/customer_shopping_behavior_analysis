@@ -159,6 +159,3 @@ Read the provided markdown report.
 
 Review or present using the Gamma PPT file.
 
-📄 License
-
-This project is for educational and portfolio purposes. Feel free to modify and reuse components as needed.
